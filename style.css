@@ -87,6 +87,7 @@ font-family: Arial, Helvetica, sans-serif;
         align-items: flex-start;
          margin: 10px 0; /* Consistent margin for text boxes */
           width: 300px; /* Adjust width as needed */
+        margin-top: -450px;
          }
           .form-container form { 
             margin-bottom: 20px; /* Space between forms */
@@ -121,3 +122,32 @@ font-family: Arial, Helvetica, sans-serif;
     justify-content: space-between; 
      
 }
+.pro{
+    display:flex;
+}
+
+.pro img {
+    float:left;
+    border-radius: 8px;
+    border-color: darkslategreys;
+    margin-left: 500px;
+    margin-top: 90px;
+    height: 400px;
+    width: 500px;}
+    img:hover{
+        background-color: dimgray;
+    }
+   
+    #photo img { 
+        width: 100%; 
+        height: auto; }
+    #photo { 
+            width: 550px; 
+            height: 500px; 
+            border-radius: 50%;
+             display: flex; 
+             justify-content: center; 
+             align-items: center; 
+             background-color: black;
+            } 
+        
