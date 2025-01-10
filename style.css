@@ -40,7 +40,6 @@ footer {
     color: white; 
     padding: 10px; 
     text-align: center; 
-    position: fixed; /* This will make the footer stick to the bottom of the page */
     width: 100%; 
     bottom: 0; 
 } 
@@ -153,4 +152,42 @@ font-family: Arial, Helvetica, sans-serif;
              align-items: center; 
              background-color: black;
             } 
+.photo-container {
+            position: relative;
+            display: inline-block;
+          }
+          
+          .photo {
+            width: 400px;
+            height: 25em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+          }
+          
+          .description {
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            padding: 8px 16px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            border-radius: 0 0 8px 8px;
+            font-size: 0.9em;
+          }
+          
+          .photo-container:hover .description {
+            display: block;
+            background-color: gray;
+          }
+          body { font-size: 16px; line-height: 1.5;
+             } 
+            @media only screen and (max-width: 600px) { 
+                body { 
+                font-size: 14px; line-height: 1.4; 
+            }
         
