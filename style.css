@@ -162,7 +162,7 @@ font-family: Arial, Helvetica, sans-serif;
             cursor: pointer;
           }
 .photo-container img{
-    width: 350px;
+    width: 400px;
             height: 25em;
             object-fit: cover;
           }
