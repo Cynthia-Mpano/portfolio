@@ -161,6 +161,12 @@ font-family: Arial, Helvetica, sans-serif;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             cursor: pointer;
           }
+.photo-container img{
+    width: 400px;
+            height: 25em;
+            object-fit: cover;
+          }
+}
           
           .description {
                 position: absolute;
