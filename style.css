@@ -191,3 +191,13 @@ font-family: Arial, Helvetica, sans-serif;
                 body { 
                 font-size: 14px; line-height: 1.4; 
             }
+                /* Styles for devices with a width of 600px and above */
+            @media (min-width: 600px) { .container { width: 50%; } } 
+            /* Styles for devices with a width below 600px */ 
+            @media (max-width: 599px) { .container { width: 100%; } }
+            /* Phones */
+             @media (max-width: 600px) { .container { width: 100%; } }
+             /* Tablets */
+              @media (min-width: 601px) and (max-width: 900px) { .container { width: 75%; } }
+             /* Desktops */ 
+             @media (min-width: 901px) { .container { width: 50%; } }
