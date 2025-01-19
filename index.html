@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-         <meta charset="UTF-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.">
         <title>my website portfolio</title>
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body class="body">
-        <div class="logo"><img src="logo.png"></div>
-        <div class="navigation" ><!--this is a division for navigation bar-->
+        <section class="main" id="main">
+        <div class="navigation"><!--this is a division for navigation bar-->
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
     <ul class="list">
         <li><a href="index.html">HOME</a></li>
         <li><a href="about.html">ABOUT</a></li>
@@ -17,50 +18,62 @@
     </ul>
         </div></br></br>
         <div class="txt"><!--this is a division for the website's body-->
-<img class="circle" src="cynthia.png"alt="this a picture of website owner" height="300" width="250" align="right"/>
-<label id="desc" >Hi there! &#128522;</br></br>I am Ishimwe Mpano Cynthia </br>
-      And I am a web designer</label></br></br>
-<label id="desc">A highly motivated and results-driven professional with extensive experience </br>
-    in designing, strategic planning, and team collaboration. Possesses an</br>
-     exceptional analytical thinking and problem-solving skills, and driven with </br>
-     innovation and creativity.</br></br></br></br></br></br></br></br>
+<label id="desc" >Hi there! &#128522;</br></br>My name is Ishimwe Mpano Cynthia </br>
+      </label></br></br>
+      <img class="circle" src="cynthia.png"alt="this a picture of website owner"  /></br></br>
+<label id="desc">I am a highly motivated and results-driven software 
+       </br>developer and a professional web designer with extensive experience </br>
+    in designing, strategic planning, and team collaboration.</br> Possesses an
+     exceptional analytical thinking and problem-solving</br> skills, and driven with 
+     innovation and creativity for future technology.</br></br></br></br></br></br>
 </label>
         </div>
         <div><h1 style="text-align: center;">MY PORTFOLIO</h1> 
         <div>
-            <div class="photo-container"> <img src="doctor.png" alt="Project1">
+            <div class="photo-container"> <img src="doctor.png" alt="Project1" >
         
         <div class="description">
            
             This an application that can help to book an appointment</br>
-                with the doctor to prevent unnecessary queues.</br>
+                with the doctor to prevent unnecessary queues.</br></div>
             
-        </div></div>
-        <div class="photo-container"><img src="designer.png" alt="Project2">
+        </div>
+        <div class="photo-container"> <img src="designer.png" alt="Project2" >
             <div class="description">
-        
+            
                 I plan on developing as many websites as possible</br>
                 as a web developer</br>
             </div></div>
-            <div class="photo-container"> <img src="recipe.png" alt="Project3">
+            <div class="photo-container"> <img src="recipe.png" alt="Project3" >
             <div class="description">
-                this is an app where users can find, share, and save recipes.</br>
-                    because cooking might be not as easy as it seems &#128522; </br>
-            
-            </div></div>
+                 this is an app where users can find, share, and save recipes.</br>
+                    because cooking might be not as easy as it seems &#128522; </br></div>
+                
+            </div>
         </div>
-        <div style="text-align: center;><h1 "><b></b>skills</b></h1>
-            <ol style="list-style-type:none;background-color: cadetblue;">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVA SCRIPT</li>
-                <li>FIGMA</li>
-            </ol>
+        <h1 style="text-align: center; ">skills</h1>
+            <div style="text-align: center;background-color: cadetblue;">
+                <ol style="list-style-type: none;">
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>FIGMA</li>
+                    <li>JAVA SCRIPT</li>
+                </ol>
+            
         </div>
 <a href="#top" style="color:black;">back to top</a>
+        
         <!--this a division for a footer-->
         <div>
         <footer> <p>&copy; 2025 Ishimwe Mpano Cynthia. All rights reserved.</p></footer>
         </div>
+        <script>
+            const menuToggle = document.getElementById('menu-toggle');
+            const navLinks = document.querySelector('.link');
+    
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script></section>
     </body>
 </html>
